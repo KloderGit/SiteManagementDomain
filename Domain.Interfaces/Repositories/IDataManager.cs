@@ -11,7 +11,7 @@ namespace Domain.Interfaces.Repositories
         IEducationProgramRepository EducationPrograms { get; }
         ISubGroupRepository SubGroups { get; }
         ISubjectRepository Subjects { get; }
-        ICertificationRepository Assessments { get; }
-        ICertificationTypeRepository AssessmentTypes { get; }
+        ICertificationRepository Certification { get; }
+        ICertificationTypeRepository CertificationTypes { get; }
     }
 }

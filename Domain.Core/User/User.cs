@@ -8,6 +8,8 @@ namespace Domain.Core.User
         public User()
         {
             Contracts = new HashSet<UserContract>();
+            Cards = new HashSet<UserCard>();
+            Comments = new HashSet<UserComment>();
         }
 
         public Int32 Id { get; set; }
@@ -23,5 +25,6 @@ namespace Domain.Core.User
 
         public virtual ICollection<UserContract> Contracts { get; set; }
         public virtual ICollection<UserCard> Cards { get; set; }
+        public virtual ICollection<UserComment> Comments { get; set; }
     }
 }
