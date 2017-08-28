@@ -8,6 +8,7 @@ namespace Domain.Core.Education
         public Statement()
         {
             Exams = new HashSet<Exam>();
+            Programs = new HashSet<SharedStatement>();
         }
 
         public Int32 Id { get; set; }
@@ -15,8 +16,7 @@ namespace Domain.Core.Education
         public string Title { get; set; }
         public DateTime Date { get; set; }
 
-        public Int32 EducationProgramId { get; set; }
-        public virtual EducationProgram EducationProgram { get; set; }
+        public virtual ICollection<SharedStatement> Programs { get; set; }
 
         public Int32 SubjectId { get; set; }
         public virtual Subject Subject { get; set; }

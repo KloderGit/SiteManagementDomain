@@ -19,5 +19,6 @@ namespace Domain.Core.Education
         public virtual EducationProgram Program { get; set; }
 
         public virtual ICollection<SubGroup> SubGroupList { get; set; }
+        
     }
 }

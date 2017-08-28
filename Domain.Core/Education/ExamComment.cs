@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Domain.Core.Education
 {
+    /// <summary>
+    /// Комментарий для экзамена
+    /// </summary>
     public class ExamComment
     {
         public Int32 Id { get; set; }

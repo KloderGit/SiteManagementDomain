@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Core.Education;
 
 namespace Domain.Core.User
 {
@@ -9,7 +10,9 @@ namespace Domain.Core.User
         {
             Contracts = new HashSet<UserContract>();
             Cards = new HashSet<UserCard>();
-            Comments = new HashSet<UserComment>();
+            UserComments = new HashSet<UserComment>();
+            ExamComments = new HashSet<ExamComment>();
+            Exams = new HashSet<Exam>();
         }
 
         public Int32 Id { get; set; }
@@ -25,6 +28,8 @@ namespace Domain.Core.User
 
         public virtual ICollection<UserContract> Contracts { get; set; }
         public virtual ICollection<UserCard> Cards { get; set; }
-        public virtual ICollection<UserComment> Comments { get; set; }
+        public virtual ICollection<UserComment> UserComments { get; set; }
+        public virtual ICollection<Exam> Exams { get; set; }
+        public virtual ICollection<ExamComment> ExamComments { get; set; }
     }
 }

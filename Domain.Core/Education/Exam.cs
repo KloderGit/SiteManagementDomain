@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Domain.Core.Education
 {
@@ -16,7 +15,7 @@ namespace Domain.Core.Education
         public DateTime End { get; set; }
         public Int32 Grade { get; set; }
 
-        public Int32 UserId { get; set; }
+        public Int32? UserId { get; set; }
         public virtual Core.User.User User { get; set; }
 
         public Int32 StatementId { get; set; }

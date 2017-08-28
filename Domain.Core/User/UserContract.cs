@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Core.Education;
 
 namespace Domain.Core.User
 {
@@ -16,13 +17,13 @@ namespace Domain.Core.User
         public Int32 UserId { get; set; }
         public virtual User User { get; set; }
 
-        public Int32? EducationProgramId { get; set; }
-        public virtual StudyProgram.EducationProgram EducationProgram { get; set; }
+        public Int32 EducationProgramId { get; set; }
+        public virtual EducationProgram EducationProgram { get; set; }
 
         public Int32? GroupId { get; set; }
-        public virtual StudyProgram.Group Group { get; set; }
+        public virtual Group Group { get; set; }
 
         public Int32? SubGroupId { get; set; }
-        public virtual StudyProgram.SubGroup SubGroup { get; set; }
+        public virtual SubGroup SubGroup { get; set; }
     }
 }

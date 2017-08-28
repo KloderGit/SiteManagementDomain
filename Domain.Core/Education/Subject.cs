@@ -16,8 +16,8 @@ namespace Domain.Core.Education
         public string Title { get; set; }
         public Int32? Duration { get; set; }
 
-        public Int32? AssessmentId { get; set; }
-        public virtual Certification Assessment { get; set; }
+        public Int32? CertificationId { get; set; }
+        public virtual Certification Certification { get; set; }
 
         public virtual ICollection<EducationalPlan> EducationalPlanList { get; set; }
     }
